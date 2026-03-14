@@ -1,0 +1,14 @@
+# MySQL data
+mysql_data/
+
+# Redis data
+redis_data/
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# Logs
+*.log

@@ -3,6 +3,6 @@ WORKDIR /app
 COPY ./code/package*.json ./
 RUN npm install
 COPY ./code .
-# No EXPOSE
- port 3000 is only accessible internally via Docker network
+ #Expose the port that the application will run on
+EXPOSE 3000 
 CMD ["npm", "start"]
