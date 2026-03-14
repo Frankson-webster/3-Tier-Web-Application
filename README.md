@@ -12,8 +12,7 @@ This project demonstrates a **production-ready 3-tier web application** architec
 - **CI/CD:** GitHub Actions  
 - **Networking:** Only port 80 is publicly exposed; backend, database, and cache are internal
 
-The goal is to deploy a secure, scalable web application accessible via:
-http://4.227.210.221/
+The goal is to deploy a secure, scalable web application accessible via: http://20.90.13.194/
 
 with **no ports other than 80 exposed**.
 
@@ -356,5 +355,5 @@ http://<public-ip>
 Only port 80 is open publicly, ensuring a secure, production-ready deployment.
 
 Author:
-Orji Tochukwu Chinedu
+Ugochukwu Samuel
 Cloud Engineer|DevOps Enthusiast
