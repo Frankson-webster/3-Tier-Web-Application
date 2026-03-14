@@ -1,23 +1,7 @@
-# Backend Dockerfile for Node.js app
-FROM node:20-alpine
-
-# Install build tools for native modules
-RUN apk add --no-cache python3 make g++
-
-# Set working directory
+FROM node:20-bullseye
 WORKDIR /app
-
-# Copy package.json and package-lock.json first to leverage caching
 COPY ./code/package*.json ./
-
-# Install dependencies
 RUN npm install
-
-# Copy rest of the backend code
 COPY ./code .
-
-# Expose backend port
 EXPOSE 3000
-
-# Start the application
 CMD ["npm", "start"]
